@@ -1,0 +1,91 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/7278212988.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+  </head>
+  <body>
+
+    <div class="loader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+
+    <div class="start_quiz">
+      <button class="start--btn">Start Quiz</button>
+    </div>
+
+    <div class="quiz_rules">
+      <header class="rules--header">
+        <h1>Rules of Quiz</h1>
+      </header>
+      <section>
+        <ol>
+          <li>1. You will have 20 seconds for each question to answer</li>
+          <li>
+            2. You will not go back to previous question after select answer
+          </li>
+          <li>3. Quiz consists of 10 questions</li>
+          <li>4. One question have to answer just one time</li>
+        </ol>
+      </section>
+      <footer>
+        <h3>Do you want to <span>contniue ?</span></h3>
+        <button id="quit">Exit Quiz</button>
+        <button id="continue">Continue</button>
+      </footer>
+    </div>
+
+    <div class="quiz">
+      <div class="quiz_header">
+        <h1>General Knowledge Quiz</h1>
+        <div class="time">
+          <div class="time_left">Time Left</div>
+          <div class="timer"> 20 </div>
+        </div>
+        <div class="time_line"></div>
+      </div>
+      <div class="questions">
+        <div class="question">
+        </div>
+        <div class="option_list">
+        </div>
+      </div>
+
+      <div class="quiz_footer">
+        <div class="total_que">
+        </div>
+        <button id="next_btn">Next Question</button>
+      </div>
+    </div>
+
+    <div class="result_box">
+      <div class="image">
+        <img src="images/crown.png" alt="">
+      </div>
+      <div class="result_text">
+        You`ve completed The Quiz!
+      </div>
+      <div class="score_text">
+        <!-- <span>and sorry, You got only <span> 2 </span> out of <span>5 </span></span> -->
+      </div>
+      <div class="buttons">
+        <button class="restart">Replay Quiz</button>
+        <button class="quit">Quit Quiz</button>
+      </div>
+    </div>
+
+    <script src="await.js"></script>
+    <script src="questions.js" defer></script>
+    <script src="main.js" defer></script>
+  </body>
+</html>
